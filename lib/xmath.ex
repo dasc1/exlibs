@@ -9,8 +9,8 @@ defmodule Xmath do
   defp _product([a|tail], tot), do: _product(tail, tot * a)
 
   def factorial(n), do: _factorial(n, 1)
-  def _factorial(0, _), do: 1
-  def _factorial(1, tot), do: tot
-  def _factorial(n, tot), do: _factorial(n-1, tot * n)
+  defp _factorial(0, _), do: 1
+  defp _factorial(1, tot), do: tot
+  defp _factorial(n, tot), do: _factorial(n-1, tot * n)
 
 end
