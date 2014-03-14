@@ -11,6 +11,6 @@ defmodule Xmath do
   def factorial(n), do: _factorial(n, 1)
   def _factorial(0, _), do: 1
   def _factorial(1, tot), do: tot
-  def _factorial(n, tot), do: factorial(n-1, tot * n)
+  def _factorial(n, tot), do: _factorial(n-1, tot * n)
 
 end
