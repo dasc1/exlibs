@@ -10,7 +10,8 @@ defmodule Exlibs.Mixfile do
 
   # Configuration for the OTP application
   def application do
-    [mod: { Exlibs, [] }]
+    []
+    #[mod: { Exlibs, [] }]
   end
 
   # Returns the list of dependencies in the format:

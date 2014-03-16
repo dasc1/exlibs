@@ -13,4 +13,10 @@ defmodule Xmath do
   defp _factorial(1, tot), do: tot
   defp _factorial(n, tot), do: _factorial(n-1, tot * n)
 
+  def proper_divisors(1), do: []
+  def proper_divisors(n) do
+    1..(div(n,2))
+    |> Enum.filter(fn x -> rem(n,x) == 0 end)
+  end
+
 end
