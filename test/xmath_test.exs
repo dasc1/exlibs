@@ -34,4 +34,15 @@ defmodule XmathTest do
     assert Xmath.proper_divisors(23) == [1]
   end
 
+  test "proper divisors 2" do
+    assert Xmath.proper_divisors2(1) == []
+    assert Xmath.proper_divisors2(2) == [1]
+    assert Xmath.proper_divisors2(3) == [1]
+    assert Xmath.proper_divisors2(4) == [1, 2]
+    assert Xmath.proper_divisors2(12) == [1, 2, 3, 4, 6]
+    assert Xmath.proper_divisors2(20) == [1, 2, 4, 5, 10]
+    assert Xmath.proper_divisors2(21) == [1, 3, 7]
+    assert Xmath.proper_divisors2(23) == [1]
+  end
+
 end

@@ -18,4 +18,12 @@ defmodule Xutils do
     |> Enum.map(fn {x, _} -> x end) # strip out result of pred
   end
 
+  def tally(collection),
+    do: _tally(Enum.sort(collection), [])
+  defp _tally([], tallied), do: Enum.reverse(tallied)
+  defp _tally([h|tail], tallied) do
+    {hs, rest} = Enum.split_while(tail, &(&1 == h))
+    _tally rest, [ {h, length(hs) + 1} | tallied ]
+  end
+
 end # defmodule Xutils
