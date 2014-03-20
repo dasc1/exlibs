@@ -116,7 +116,7 @@ defmodule Xmath do
     _pd2_generate_factors(tail, newnums)
   end
   defp _pd2_tail([_h|tail]), do: tail
-  defp _pd2_pow(n, 0), do: 1
+  defp _pd2_pow(_n, 0), do: 1
   defp _pd2_pow(n, 1), do: n
   defp _pd2_pow(n, x), do: n * _pd2_pow(n, x-1)
 

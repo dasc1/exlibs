@@ -3,5 +3,6 @@ defmodule DocTest do
 
   doctest Xmath
   doctest Xprimes
+  doctest Xutils
 
 end
