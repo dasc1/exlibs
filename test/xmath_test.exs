@@ -23,15 +23,15 @@ defmodule XmathTest do
     assert Xmath.factorial(7) == 5040
   end
 
-  test "proper divisors" do
-    assert Xmath.proper_divisors(1) == []
-    assert Xmath.proper_divisors(2) == [1]
-    assert Xmath.proper_divisors(3) == [1]
-    assert Xmath.proper_divisors(4) == [1, 2]
-    assert Xmath.proper_divisors(12) == [1, 2, 3, 4, 6]
-    assert Xmath.proper_divisors(20) == [1, 2, 4, 5, 10]
-    assert Xmath.proper_divisors(21) == [1, 3, 7]
-    assert Xmath.proper_divisors(23) == [1]
+  test "proper divisors 1" do
+    assert Xmath.proper_divisors1(1) == []
+    assert Xmath.proper_divisors1(2) == [1]
+    assert Xmath.proper_divisors1(3) == [1]
+    assert Xmath.proper_divisors1(4) == [1, 2]
+    assert Xmath.proper_divisors1(12) == [1, 2, 3, 4, 6]
+    assert Xmath.proper_divisors1(20) == [1, 2, 4, 5, 10]
+    assert Xmath.proper_divisors1(21) == [1, 3, 7]
+    assert Xmath.proper_divisors1(23) == [1]
   end
 
   test "proper divisors 2" do
